@@ -1,3 +1,8 @@
 # Colonization-Project
 My first ever project.
-Made by Colin and Alex
+Made by Colin Wang and Alex Li
+
+
+
+Current Update:
+Alpha 0.0
