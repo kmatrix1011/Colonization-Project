@@ -4,15 +4,42 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
 
-    public Animator animator;
-    
-    // Use this for initialization
-    void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    #region Singleton
+
+    public static Inventory instance;
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("More than one instance of inventory found!");
+            return;
+        }
+        instance = this;
+    }
+
+    #endregion
+
+    public int space = 40;
+
+    public List<Item> items = new List<Item>();
+
+    public bool Add (Item item)
+    {
+        if (!item.isDefaultItem)
+        {
+            if(items.Count >= space)
+            {
+                Debug.Log("Not enough room.");
+                return false;
+            }
+            items.Add(item);
+        }
+
+        return true;
+    }
+    public void Remove(Item item)
+    {
+        items.Remove(item);
+    }
 }
