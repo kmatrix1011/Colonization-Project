@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour {
 
     public float pitch = 1f;
     public float zoomSpeed = 5f;
-    public float minZoom = 7f;
+    public float minZoom = 5f;
     public float maxZoom = 25f;
 
     public float yawSpeed = 130f;

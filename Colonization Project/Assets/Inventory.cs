@@ -21,6 +21,9 @@ public class Inventory : MonoBehaviour {
     #endregion
 
     public int space = 40;
+    public int kk = 0;
+    public int health = 100;
+    public int maxHealth = 100;
 
     public List<Item> items = new List<Item>();
 

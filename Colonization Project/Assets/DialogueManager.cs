@@ -7,6 +7,10 @@ public class DialogueManager : MonoBehaviour {
 
 	public Text nameText;
 	public Text dialogueText;
+    public PlayerController controller;
+    public PlayerMotor motor;
+
+    private int gameStoryType = 0;
 
 	public Animator animator;
 
@@ -15,6 +19,7 @@ public class DialogueManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		sentences = new Queue<string>();
+        gameStoryType = 0;
 	}
 
 	public void StartDialogue (Dialogue dialogue)
@@ -59,7 +64,10 @@ public class DialogueManager : MonoBehaviour {
 	void EndDialogue()
 	{
 		animator.SetBool("IsOpen", false);
-
-	}
+        controller.enabled = true;
+        motor.enabled = true;
+        if (gameStoryType == 0)
+            gameStoryType = 1;
+    }
 
 }
