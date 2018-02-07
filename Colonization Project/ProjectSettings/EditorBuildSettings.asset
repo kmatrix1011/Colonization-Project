@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/Main Menu Assets/Main Menu.unity
+    guid: 12a4d0b6b646d644db37e4fa9ca1b80a
+  - enabled: 1
+    path: Assets/Game/Tutorial Planet Assets/StarterPlanet.unity
+    guid: 5fee0079e205a294785428edf813309a

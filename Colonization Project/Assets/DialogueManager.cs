@@ -67,7 +67,7 @@ public class DialogueManager : MonoBehaviour {
         controller.enabled = true;
         motor.enabled = true;
         if (gameStoryType == 0)
-            gameStoryType = 1;
+            gameStoryType += 1;
     }
 
 }
