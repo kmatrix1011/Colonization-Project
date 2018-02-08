@@ -11,8 +11,8 @@ public class DialogueTrigger : MonoBehaviour {
 
     void Start()
     {
-        motor.enabled = false;
-        controller.enabled = false;
+        motor.enabled = true;
+        controller.enabled = true;
     }
     public void TriggerDialogue()
     {
