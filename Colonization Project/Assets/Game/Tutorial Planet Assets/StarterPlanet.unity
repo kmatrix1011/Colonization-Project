@@ -479,6 +479,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 161250, guid: 8473c35643362f548bb7d38bb13d27a7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 164144, guid: 8473c35643362f548bb7d38bb13d27a7, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 161250, guid: 8473c35643362f548bb7d38bb13d27a7, type: 2}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8473c35643362f548bb7d38bb13d27a7, type: 2}
   m_IsPrefabParent: 0
