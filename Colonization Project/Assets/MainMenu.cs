@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
     public AudioMixer audioMixer;
+    public Slider slider;
 
 	public void PlayGame()
     {
@@ -20,5 +22,18 @@ public class MainMenu : MonoBehaviour {
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+    }
+    public void Mute(bool volumeOff)
+    {
+        if (!volumeOff)
+        {
+            audioMixer.SetFloat("volume", 0);
+            slider.value = 0;
+        }
+        else
+        {
+            audioMixer.SetFloat("volume", -80);
+            slider.value = -80;
+        }
     }
 }
